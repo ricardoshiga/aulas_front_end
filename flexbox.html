@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Verdana; }
+
+        /* Tornando as imagens responsíveis */
+        img { max-width: 100%; }
+
+        /* Flex Container 
+        Elemento principal/pai*/
+#exemplo {
+    box-shadow: black 0 0 5px;
+    padding: 5px;
+
+    /* Habiliar o FlexBox */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* Inverte a sequência das imagens */
+    flex-direction: row-reverse;
+
+    width: 95%;
+    margin: auto;
+    height: 800px;
+}
+
+
+        /* Flex Items 
+        Elementos descendentes/filho de um container flex*/
+ 
+article {
+    
+    padding: 8px;
+    width: 30%;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo CSS3 que permite aplicar facilmente recursos de alinhamentos, espaçamentos e distribuição
+        de elementos no HTML. Muito útil na elaboração de layouts.</p>
+
+    <div id="exemplo">
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis
+                nulla temporibus?</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis
+                nulla temporibus?</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis
+                nulla temporibus?</p>
+        </article>
+
+    </div>
+
+</body>
+
+</html>
